@@ -28,7 +28,7 @@ export default function Navbar() {
           ""
         ) : (
           <div
-            className={`w-full flex-grow lg:flex lg:items-center lg:w-auto `}
+            className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto `}
           >
             <div className="text-sm lg:flex-grow">
               <div className="  sm:flex-none lg:flex justify-center">
@@ -50,14 +50,17 @@ export default function Navbar() {
                 >
                   Reviews
                 </a>
+                <a
+                  href="#responsive-header"
+                  className="block mt-4 lg:inline-block lg:mt-0 text-slate-800 text-base md:text-xl p-2 rounded-md  hover:bg-slate-100 transition ease-in hover:text-indigo-500 "
+                >
+                 About
+                </a>
               </div>
             </div>
             <div>
-              <button className="flex justify-center items-center gap-1 text-md px-4 py-2 font-bold leading-none border rounded bg-indigo-800 text-white border-white hover:bg-indigo-700 hover:text-white mt-4 lg:mt-0">
-                <span>
-                  <HiLogin />
-                </span>
-                Login
+              <button className="flex  justify-center items-center gap-1 text-md px-4 py-2 font-bold leading-none border rounded-md bg-indigo-800 text-white border-white hover:bg-indigo-700 hover:text-white mt-4 lg:mt-0">
+                Contact Now
               </button>
             </div>
           </div>
