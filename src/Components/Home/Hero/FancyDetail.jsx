@@ -52,7 +52,7 @@ export default function FancyDetail() {
       <div className="desc">
         <div className="text-center">
           <h3 className="text-3xl">What we do ?</h3>
-          <p className="mt-5 text-lg text-slate-600 mx-auto max-w-xl text-center">
+          <p className="mt-3 md:mt-5 text-md md:text-lg text-slate-600 mx-auto max-w-xl text-center">
             Create, collaborate, and turn your ideas into incredible products
             with the definitive platform for digital design.
           </p>
@@ -60,18 +60,18 @@ export default function FancyDetail() {
       </div>
       {/* end */}
 
-      <div className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 mt-5 p-4">
-        <div className="lg:col-span-4 md:col-span-6">
+      <div className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 mt-5 p-4 items-center gap-[10px] md:gap-[30px]">
+        <div className="lg:col-span-4 md:col-span-6 lg:order-1 order-2">
           <div className="grid grid-cols-1">
             {watchFeature.slice(0,3).map((feature) => (
               <Feature feature={feature} key={feature.id} />
             ))}
           </div>
         </div>
-        <div className="lg:col-span-4 md:col-span-12 lg:mx-8">
-          <img className="w-94 mx-auto" src={fancyWatch} alt="" />
+        <div className="lg:col-span-4 md:col-span-12 lg:mx-8 flex items-center   lg:order-2 order-1">
+          <img className="w-72 md:w-94 mx-auto" src={fancyWatch} alt="" />
         </div>
-        <div className="lg:col-span-4 md:col-span-6">
+        <div className="lg:col-span-4 md:col-span-6 order-3">
           <div className="grid grid-cols-1">
             {watchFeature.slice(3,6).map((feature) => (
               <FeatureRight feature={feature} key={feature.id} />

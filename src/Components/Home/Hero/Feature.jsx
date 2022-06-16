@@ -4,7 +4,7 @@ import React from "react";
 export default function Feature({ feature }) {
   return (
     <div className="flex justify-center gap-[30px] lg:mt-10 leading-loose">
-      <div className="text-right">
+      <div className="text-left md:text-right">
         <span className="text-xl">{feature.title}</span>
         <p className="text-slate-500">{feature.des}</p>
       </div>
