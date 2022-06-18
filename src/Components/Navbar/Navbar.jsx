@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/images/Logo.png";
 // import { HiLogin } from "react-icons/hi";
 export default function Navbar() {
@@ -37,30 +37,46 @@ export default function Navbar() {
             >
               <div className="text-sm lg:flex-grow">
                 <div className="  sm:flex-none lg:flex justify-center">
-                  <Link
+                  <NavLink
                     to="/"
-                    className="block mt-4 lg:inline-block lg:mt-0 text-slate-800 text-base md:text-xl  hover:text-indigo-500 p-2 rounded-md hover:bg-slate-100 transition ease-in    mr-4"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "block mt-4 lg:inline-block lg:mt-0  text-base md:text-xl  text-indigo-500 p-2 rounded-md bg-slate-100 transition ease-in mr-4"
+                        : "block mt-4 lg:inline-block lg:mt-0 text-slate-800 text-base md:text-xl  hover:text-indigo-500 p-2 rounded-md hover:bg-slate-100 transition ease-in mr-4"
+                    }
                   >
                     Home
-                  </Link>
-                  <Link
+                  </NavLink>
+                  <NavLink
                     to="shop"
-                    className="block mt-4 lg:inline-block lg:mt-0 text-slate-800  text-base md:text-xl p-2 rounded-md hover:bg-slate-100 transition ease-in  hover:text-indigo-500 mr-4"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "block mt-4 lg:inline-block lg:mt-0  text-base md:text-xl  text-indigo-500 p-2 rounded-md bg-slate-100 transition ease-in mr-4"
+                        : "block mt-4 lg:inline-block lg:mt-0 text-slate-800 text-base md:text-xl  hover:text-indigo-500 p-2 rounded-md hover:bg-slate-100 transition ease-in mr-4"
+                    }
                   >
                     Shop
-                  </Link>
-                  <Link
+                  </NavLink>
+                  <NavLink
                     to="reviews"
-                    className="block mt-4 lg:inline-block lg:mt-0 text-slate-800 text-base md:text-xl p-2 rounded-md  hover:bg-slate-100 transition ease-in hover:text-indigo-500 "
+                    className={({ isActive }) =>
+                      isActive
+                        ? "block mt-4 lg:inline-block lg:mt-0  text-base md:text-xl  text-indigo-500 p-2 rounded-md bg-slate-100 transition ease-in mr-4"
+                        : "block mt-4 lg:inline-block lg:mt-0 text-slate-800 text-base md:text-xl  hover:text-indigo-500 p-2 rounded-md hover:bg-slate-100 transition ease-in mr-4"
+                    }
                   >
                     Reviews
-                  </Link>
-                  <Link
+                  </NavLink>
+                  <NavLink
                     to="about"
-                    className="block mt-4 lg:inline-block lg:mt-0 text-slate-800 text-base md:text-xl p-2 rounded-md  hover:bg-slate-100 transition ease-in hover:text-indigo-500 "
+                    className={({ isActive }) =>
+                      isActive
+                        ? "block mt-4 lg:inline-block lg:mt-0  text-base md:text-xl  text-indigo-500 p-2 rounded-md bg-slate-100 transition ease-in mr-4"
+                        : "block mt-4 lg:inline-block lg:mt-0 text-slate-800 text-base md:text-xl  hover:text-indigo-500 p-2 rounded-md hover:bg-slate-100 transition ease-in mr-4"
+                    }
                   >
                     About
-                  </Link>
+                  </NavLink>
                 </div>
               </div>
               <div>

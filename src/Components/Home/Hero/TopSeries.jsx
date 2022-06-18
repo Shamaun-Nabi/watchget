@@ -1,5 +1,5 @@
 import React from "react";
-import topImage from "../../../assets/images/1.jpg";
+import topImage from "../../../assets/images/2.png";
 import { FiChevronRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,7 @@ export default function TopSeries() {
       <div>
         <div className="grid grid-cols-1 md:grid-cols-2 ">
           <div className="flex justify-center p-3">
-            <img className="h-80 md:h-full" src={topImage} alt="" />
+            <img className="h-80 md:h-96" src={topImage} alt="" />
           </div>
           <div className="flex items-center leading-normal md:leading-loose  p-3">
             <div>
