@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Footer from "./Components/Footer/Footer";
 import About from "./Components/Home/About/About";
 import Home from "./Components/Home/Home";
 import Reviews from "./Components/Home/Reviews/Reviews";
@@ -18,6 +19,7 @@ function App() {
         <Route path="shop" element={<Shop />} />
         <Route path="reviews" element={<Reviews />} />
       </Routes>
+      <Footer/>
     </>
   );
 }

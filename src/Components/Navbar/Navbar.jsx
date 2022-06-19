@@ -1,9 +1,24 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/images/Logo.png";
+import { HiMoon } from "react-icons/hi";
+import { MdWbSunny } from "react-icons/md";
+import { useEffect } from "react";
 // import { HiLogin } from "react-icons/hi";
 export default function Navbar() {
+  const [moon, setMoon] = useState(false);
+  const [theme, setTheme] = useState("light-theme");
+  console.log(moon);
   const [open, setOpen] = useState(false);
+  const toggleTheme = () => {
+    setMoon(!moon);
+    theme === "dark-theme" ? setTheme("light-theme") : setTheme("dark-theme");
+
+  };
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
   return (
     <>
       <nav className="sticky top-0 z-50 bg-white">
@@ -79,10 +94,16 @@ export default function Navbar() {
                   </NavLink>
                 </div>
               </div>
-              <div>
+              <div className="flex items-center justify-center text-indigo-600 gap-4">
                 <button className="flex  justify-center items-center gap-1 text-md px-4 py-2 font-bold leading-none border rounded-md bg-indigo-800 text-white border-white hover:bg-indigo-700 hover:text-white mt-4 lg:mt-0">
-                  Contact Now
+                  Login
                 </button>
+                <div
+                  className="border p-2 rounded-full hover:cursor-pointer hover:bg-indigo-700 transition ease-in hover:text-white"
+                  onClick={() => toggleTheme()}
+                >
+                  {moon ? <HiMoon /> : <MdWbSunny />}
+                </div>
               </div>
             </div>
           )}

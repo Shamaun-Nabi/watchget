@@ -9,11 +9,11 @@ export default function Hero() {
       <div className="grid grid-cols-1 md:grid-cols-2 ">
         <div className="flex  items-center p-4 order-2 md:order-1">
           <div>
-            <h6 className="text-indigo-600 text-lg font-semibold">Here to turn make hand turn</h6>
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-relaxed md:leading-normal">
+            <h6 className=" text-lg text-indigo-600 font-semibold">Here to turn make hand turn</h6>
+            <h2 className="text-4xl md:text-5xl font-bold leading-relaxed md:leading-normal">
               The Future of <br /> Tech is Here
             </h2>
-            <p className="mt-5 text-md md:text-lg text-slate-600 font-semibold">
+            <p className="mt-5 text-md md:text-lg  font-semibold text-slate-500">
               Launch your campaign and benefit from our expertise on designing
               and managing conversion centered Tailwind CSS v3.x html page.
             </p>

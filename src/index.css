@@ -2,4 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+
+.dark-theme {
+  background: rgb(3, 0, 23);
+  color: white !important;
+}
+
+.light-theme {
+  background: white;
+  color: black !important;
+}

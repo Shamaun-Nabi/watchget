@@ -41,7 +41,7 @@ export default function FancyDetail() {
       icon: <BsPhone />,
     },
     {
-      id: "5",
+      id: "6",
       title: "Games",
       des: "One disadvantage of Lorum Ipsum is that in Latin frequently than others",
       icon: <TbDeviceGamepad2 />,
